@@ -1,0 +1,55 @@
+$block : purrweb-list-count;
+
+.#{$block} {
+  @extend .flexbox;
+  margin-top: 10px;
+  &__item{
+    position: relative;
+    flex: 1 0 auto;
+    opacity: 0;
+    &:before{
+      content: '';
+      width: 1px;
+      height: 7px;
+      background-color: $color;
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  }
+  &__item-description{
+    position: relative;
+    left: -2px;
+    top: 15px;
+    font-family: $font-secondary;
+    font-size: 10px;
+    line-height: 3.8px;
+    text-align: left;
+    color: $color;
+  }
+  &__development{
+    .#{$block}__item {
+      &:last-child {
+        flex: 0 0 1px;
+        &:before{
+          left:inherit;
+          right: 1px;
+
+        }
+        .#{$block}__item-description{
+          left:3px;
+        }
+      }
+    }
+
+  }
+  &__planing{
+    .#{$block}__item {
+      &:last-child{
+        flex: 0 0 84px;
+      }
+    }
+  }
+}
+

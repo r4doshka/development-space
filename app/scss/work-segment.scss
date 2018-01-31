@@ -1,0 +1,76 @@
+$block : purrweb-work-segment;
+
+.#{$block} {
+
+  &__title{
+    font-size: 16px;
+    font-weight: bold;
+    color: $color3;
+    text-align: center;
+    &_planing{
+      color: $color5;
+    }
+  }
+  &__line{
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2px 0;
+    &:before{
+      content: '';
+      position: absolute;
+      left:0;
+      top: 0;
+      height: 6px;
+      width: 2px;
+      background: $color5;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      right:0;
+      top: 0;
+      height: 6px;
+      width: 2px;
+      background: $color5;
+      opacity: 0;
+    }
+    &_division{
+      &:after{
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+    }
+    &-body{
+      display: block;
+      width: 100%;
+      background: $color5;
+      height: 2px;
+      &_design{
+        background: $color6;
+      }
+      &_development{
+        background: $color7;
+        &-body{
+          background: $color7;
+        }
+      }
+    }
+    &_design{
+      &:before{
+        background: $color6;
+      }
+      &:after{
+        background: $color6;
+      }
+    }
+    &_development{
+      &:after{
+        background: $color7;
+      }
+      &:before{
+        background: $color7;
+      }
+    }
+  }
+}

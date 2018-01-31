@@ -1,0 +1,77 @@
+$block : ".purrweb-menu";
+
+#{$block} {
+  &-wrap{
+    padding-right: 75px;
+  }
+  @extend .flexbox;
+  margin: 0;
+  padding: 0;
+  &_footer{
+    #{$block}__item-link{
+      color: $color1;
+    }
+  }
+  &__dropdown{
+    @extend .flexbox;
+    position: absolute;
+    top:90%;
+    animation-name: MenuAnimateHoverOut;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    #{$block}__item{
+      margin-right: 26px;
+    }
+  }
+  &__item{
+    position: relative;
+    margin-right: 32px;
+    cursor: pointer;
+    list-style: none;
+    &:last-child{
+      margin-right: 0;
+    }
+    &-link{
+      font-size: 14px;
+      line-height: 1.93;
+      color: $color;
+      text-decoration: underline;
+      white-space: nowrap;
+      transition: color 0.4s;
+      &:hover{
+        color: $color1;
+        transition: color 0.4s;
+      }
+    }
+    &__active,
+    &:hover{
+     & > #{$block}__item{
+       &-link{
+         color: $color1;
+       }
+     }
+    }
+    &_nested{
+      padding-right: 10px;
+      &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -4px;
+        border-style: solid;
+        border-width: 6px 3px 0 3px;
+        border-color: $color2 transparent transparent transparent;
+        cursor: pointer;
+      }
+      &:hover{
+        #{$block}__dropdown{
+          animation-name: MenuAnimateHover;
+          animation-duration: .6s;
+          animation-fill-mode: both;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+$block : purrweb-step-box;
+
+.#{$block}{
+  position: relative;
+  z-index: 1;
+  &__colored{
+    background-color: $color2;
+  }
+  &__bg-after{
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('../images/dot-img.svg');
+      display: block;
+      height: 40%;
+      z-index: -1;
+    }
+  }
+  &__bg-before{
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: url('../images/dot-img.svg');
+      display: block;
+      height: 50%;
+      z-index: -1;
+    }
+  }
+}

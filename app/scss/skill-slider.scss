@@ -1,0 +1,39 @@
+.skill-slider{
+  .slick-track{
+    .slick-slide{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $font-secondary;
+      font-size: 14px;
+      line-height: 2.07;
+      color: $color3;
+      height: 75px;
+      transition: 0.6s;
+      padding: 0 20px;
+      opacity: 0;
+      &.slick-active{
+
+      }
+      &.item-small{
+        opacity: 0.15;
+        font-size: 14px;
+        line-height: 2.07;
+
+      }
+      &.item-big{
+
+        opacity: 0.3;
+        font-size: 24px;
+        line-height: 1.22;
+
+      }
+      &.item-large{
+        font-size: 36px;
+        line-height: 1;
+        opacity: 1;
+      }
+    }
+  }
+}
+

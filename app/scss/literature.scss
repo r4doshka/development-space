@@ -1,0 +1,72 @@
+$block : purrweb-literature;
+
+.#{$block}{
+  background-color: $color2;
+  padding: 70px 0 50px;
+  &__header {
+    position: absolute;
+    top: -22px;
+    left: -24px;
+    right: 0;
+    font-family: $font-secondary;
+    font-size: 30px;
+    line-height: 1.18;
+    text-align: center;
+    color: $color3;
+    white-space: pre-line;
+    z-index: 1;
+  }
+  &__frame{
+    position: relative;
+    margin: 0 100px;
+    padding: 34px 0 21px;
+    background-color: $color4;
+    &:before{
+      content: url('../images/crown-icon.png');
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      margin-left: -65px;
+      z-index: 1;
+    }
+  }
+  &__grid{
+    @extend .flexbox;
+  }
+  &__grid-item{
+    position: relative;
+    flex: 0 0 33.3333%;
+  }
+  &__grid-item-icon{
+    position: absolute;
+    top:9px;
+    left: 22px;
+    &_reverse{
+      right: 20px;
+      top:1px;
+      left:initial;
+    }
+  }
+  &__sub-title{
+    margin-bottom: 17px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.17;
+    text-align: center;
+    color: $color3;
+    white-space: pre-line;
+    &__top-indent{
+      margin-top: 39px;
+    }
+  }
+  &__description{
+    white-space: pre-line;
+    font-size: 14px;
+    line-height: 1.12;
+    text-align: center;
+    color: $color3;
+  }
+  .img-responsive{
+    display: inline-block;
+  }
+}

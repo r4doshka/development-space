@@ -1,0 +1,42 @@
+$block : ".purrweb";
+
+#{$block} {
+  &-content{
+
+  }
+  &-container{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  &-group{
+    display: flex;
+  }
+  &-bg-fill{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 59px;
+      left: 0;
+      right: 0;
+      height: 232px;
+      background-color: #f8e71c;
+      z-index: -4;
+    }
+  }
+  &-bg-dots{
+    position: relative;
+    &:after{
+      content: '';
+      display: block;
+      background: url('../images/dot-img.svg');
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      height: 625px;
+      z-index: -3;
+    }
+  }
+}

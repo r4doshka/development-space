@@ -1,0 +1,26 @@
+$block : purrweb-footer;
+
+.#{$block}{
+  padding: 0 0 115px;
+  &_bg{
+    padding: 174px 0 322px;
+    background: url('../images/footer-bg.png') no-repeat;
+    background-size: cover;
+    background-position-y: 100px;
+  }
+  &__top{
+    margin-bottom: 173px;
+  }
+  &__bottom{
+    @extend .flexbox;
+    @extend .justify-between;
+    margin-bottom: 10px;
+  }
+  &__logo{
+
+  }
+  &__copyright{
+    font-size: 12px;
+    color: $color3;
+  }
+}

@@ -1,0 +1,74 @@
+$block : purrweb-form;
+
+.#{$block}{
+  border-radius: 3px;
+  background-color: $color4;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.1);
+  &__title{
+    font-family: $font-secondary;
+    font-size: 56px;
+    line-height: 1.3;
+    text-align: left;
+    color: $color3;
+  }
+  &-contact{
+    width: 770px;
+    margin: 0 auto;
+    padding: 27px 64px 83px 55px;
+    .#{$block}{
+      &__header{
+        position: relative;
+        margin-bottom: 45px;
+        &:before{
+          content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="145" height="54" viewBox="0 0 145 54"><path fill="%23F8E81C" fill-rule="evenodd" d="M62.71 16.27c2.357-1.94 6.347-5.287 8.958-5.159 1.922.095 8.345 5.223 9.231 7.06.35.726.654 2.26.543 3.258 2.305-1.278 4.993-3.942 8.144-6.244 2.704-1.976 7.129-4.85 10.046-4.617 4.207.336 6.83 5.468 9.775 7.874 8.366-3.851 15.81-8.624 28.237-8.416 2.821 2.699 7.08 3.96 7.059 9.502-4.386 1.733-10.856 1.371-16.02 3.258-3.111 1.138-6.319 3.271-9.23 4.887-3.1 1.72-7.644 4.159-10.59 3.53-3.45-.737-5.062-5.512-6.787-8.688C95.38 25.97 88.585 32.78 81.713 38.262c-2.134 1.702-5.463 4.428-7.872 4.072-3.27-.483-7.487-7.274-7.332-12.217-7.3 4.728-14.242 12.017-21.72 18.463-2.09 1.802-5.685 4.841-8.417 4.886-5.164.084-10.163-6.66-9.774-12.489.516-7.71 4.8-15.2 6.788-20.906-4.972 3.9-11.553 10.54-16.562 16.29-3.259 3.741-5.65 5.895-8.689 10.046-1.904 2.6-3.487 6.14-7.6 3.257-1.128-4.906-.462-11.056 1.898-14.932 1.01-1.654 2.76-3.08 4.074-4.887C14.68 18.608 26.73 7.018 38.544.251c2.934-1.68 10.742 5.526 11.132 8.146.59 3.953-3.362 11.004-4.615 14.118-1.963 4.873-3.975 8.393-5.43 13.032 6.4-4.916 15.218-12.815 23.078-19.278z" style="mix-blend-mode:multiply"/></svg>');
+          position: absolute;
+          top: 3px;
+          left: -9px;
+        }
+      }
+      &__title-note{
+        font-size: 22px;
+        text-align: left;
+        color: $color3;
+      }
+      &__title{
+        position: relative;
+        z-index: 1;
+      }
+      &-control-textarea{
+        padding: 28px 22px 20px ;
+        width: 100%;
+        height: 162px;
+        resize: none;
+        border-radius: 3px;
+        background-color: $color4;
+        border: solid 1px $color8;
+        font-size: 14px;
+        text-align: left;
+        color: $color9;
+        &:focus{
+          outline:none;
+        }
+        &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+        &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+        &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+        &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+        &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+        &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+      }
+      &-group{
+        margin-bottom: 23px;
+      }
+      &__button-group{
+        position: relative;
+        z-index: 1;
+        &_align-right{
+          @extend .flexbox;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

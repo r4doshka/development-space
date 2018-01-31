@@ -1,0 +1,41 @@
+$block : purrweb-algorithm;
+
+.#{$block} {
+  position: relative;
+  text-align: center;
+  &__note{
+    margin-bottom: 14px;
+  }
+  &__header-wrap{
+    &:before{
+      content: '';
+      position: absolute;
+      height: 83px;
+      top:0;
+      left:0;
+      right:0;
+      background: $color4;
+    }
+    position: relative;
+    padding-bottom: 70px;
+    background-color: $color2;
+  }
+  &__header{
+    padding-right: 33px;
+    &:before{
+      content: url('../images/bitmap.png');
+      display: block;
+      position: absolute;
+      bottom: -49px;
+      right: 32px;
+    }
+    .purrweb-title-primary{
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &__inner-wrap{
+    position: relative;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,65 @@
+$block : ".purrweb-list";
+
+#{$block} {
+  margin: 0;
+  padding: 0;
+  @extend .flexbox;
+  &__item{
+    list-style: none;
+    &-link{
+      &:focus,
+      &:active,
+      &:hover{
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+  &#{$block}{
+    &_indent-bottom{
+      margin-bottom: 29px;
+    }
+    &_tags{
+      #{$block}{
+        &__item{
+          margin-right: 9px;
+          font-size: 14px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #9b9b9b;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    &_icon{
+      max-width: 620px;
+      flex-wrap: wrap;
+      #{$block}{
+        &__item{
+          position: relative;
+          margin: 0 0 28px 0;
+          padding-right: 20px;
+          @extend .flexbox;
+          @extend .align-center;
+          flex: 0 0 50%;
+          &-icon{
+            @extend .flexbox;
+            height: 41px;
+            width: 41px;
+            flex: 0 0 41px;
+            @extend .flexbox;
+            margin-right: 13px;
+            position: relative;
+            top: -4px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+$block : ".purrweb-frame";
+
+#{$block} {
+  position: relative;
+  margin-bottom: 165px;
+  padding: 41px 129px 62px 41px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 11px 12px 0 rgba(0, 0, 0, 0.1);
+  &__icon{
+    position: absolute;
+    top: -96px;
+    right: -61px;
+  }
+  &#{$block}{
+    &_limited{
+      max-width: 760px;
+    }
+    &_offset-left{
+      position: relative;
+      left: -41px;
+    }
+    &_review{
+      width: 760px;
+      margin: 0;
+      padding: 30px 127px 24px 40px;
+      box-shadow: none;
+      border-radius: 0;
+      &:before{
+        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='714' height='220' viewBox='0 0 714 220'><path fill='none' fill-rule='evenodd' stroke='#272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M2 2h687c12.703 0 23 10.297 23 23v193'/></svg>");
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &:after{
+        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='698' height='220' viewBox='0 0 698 220'><path fill='none' fill-rule='evenodd' stroke='#272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M696 218H25c-12.703 0-23-10.297-23-23V2'/></svg>");
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+      }
+    }
+  }
+  .purrweb-text-box__header{
+    margin-bottom: 40px;
+  }
+  .purrweb-text-box{
+    margin-bottom: 0;
+  }
+}

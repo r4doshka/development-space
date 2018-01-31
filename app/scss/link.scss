@@ -1,0 +1,30 @@
+$block : ".purrweb-link";
+
+#{$block} {
+  margin-left: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.93;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color;
+  &#{$block} {
+    &_arrow{
+      position: relative;
+      &:before{
+        content: '<';
+        position: absolute;
+        left: -16px;
+        top: -4px;
+      }
+    }
+  }
+}
+
+$block : ".purrweb-page-link";
+
+#{$block} {
+  margin-bottom: 60px;
+}

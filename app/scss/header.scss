@@ -1,0 +1,32 @@
+$block: ".purrweb-header";
+
+#{$block}{
+  padding-top: 16px;
+  margin-bottom: 60px;
+  &__logo{
+    position: relative;
+    display: inline-block;
+    padding: 4px 0 0 6px;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 19px;
+      left: 12px;
+      display: block;
+      height: 23px;
+      width: calc(100% + 1px);
+      background-color: $color2;
+      z-index: -1;
+    }
+  }
+  &__group{
+    @extend .flexbox;
+    @extend .justify-between;
+  }
+  &#{$block}{
+    &_big-indent{
+      margin-bottom: 101px;
+    }
+  }
+}
+

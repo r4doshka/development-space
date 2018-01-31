@@ -1,0 +1,50 @@
+.btn{
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus{
+    outline:none;
+    box-shadow: none;
+  }
+  &.btn-primary {
+
+  }
+}
+
+$block : purrweb-btn;
+.#{$block}{
+  &:focus,
+  &:active{
+    outline:none;
+  }
+  &__send{
+    padding: 8px 32px;
+    position: relative;
+    border-radius: 3px;
+    background-color: $color2;
+    font-size: 22px;
+    color: $color3;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border: none;
+    &:after{
+      content: '';
+      position: absolute;
+      left: 7px;
+      bottom: -2px;
+      top: 7px;
+      right: -4px;
+      transform: rotate(2deg);
+      opacity: 0.3;
+      border-radius: 3px;
+      background-color: #000000;
+      z-index: -1;
+      transition: opacity 0.1s;
+    }
+    &:focus:active{
+      &:after{
+        opacity: 0;
+        transition: opacity 0.1s;
+      }
+    }
+  }
+}

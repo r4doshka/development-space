@@ -1,0 +1,56 @@
+$block: ".purrweb";
+
+#{$block}{
+  &-title-primary{
+    margin: 0;
+    font-size: 86px;
+    line-height: 1.01;
+    color: $color3;
+    font-family: $font-secondary;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    &#{$block}-title-primary{
+      &_small{
+        font-size: 48px;
+        line-height: 1.06;
+      }
+    }
+  }
+  &-subtitle{
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.13;
+    color: $color3;
+  }
+  &-remark{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding: 0 8px 0 7px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color3;
+    z-index: 1;
+    &:before{
+      content: '';
+      position: absolute;
+      height: 23px;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      opacity: 0.31;
+      background: $color2;
+      z-index: -1;
+    }
+    &#{$block}-remark_secondary{
+      padding: 0 19px 0 14px;
+      &:before{
+        bottom: -1px;
+      }
+    }
+  }
+}
+

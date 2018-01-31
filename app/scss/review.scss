@@ -1,0 +1,53 @@
+$block : ".purrweb-review";
+
+#{$block} {
+  position: relative;
+  margin-bottom: 200px;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 177px;
+    left: 0;
+    right: 0;
+    height: 232px;
+    background-color: #f8e71c;
+    z-index: -4;
+  }
+  &__header{
+    margin-bottom: 17px;
+    .purrweb-badge{
+      margin-top: 3px;
+    }
+  }
+  &__content{
+    position: relative;
+    display: inline-block;
+    &:before{
+      content: url("../images/left-right.png");
+      position: absolute;
+      top: 0;
+      left: -64px;
+      z-index: 2;
+    }
+    &:after{
+      content: url("../images/left-right.png");
+      position: absolute;
+      bottom: -10px;
+      right: 18px;
+      z-index: 2;
+      transform: rotate(180deg);
+    }
+  }
+  &__image{
+    position: absolute;
+    top: -143px;
+    right: -135px;
+  }
+  .purrweb-text-box__content p{
+    margin-bottom: 26px;
+  }
+  .purrweb-text-box{
+    position: relative;
+    z-index: 2;
+  }
+}

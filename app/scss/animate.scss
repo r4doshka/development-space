@@ -1,0 +1,28 @@
+
+$block : ".purrweb-animate";
+
+#{$block} {
+
+}
+
+@keyframes MenuAnimateHover {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes MenuAnimateHoverOut {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

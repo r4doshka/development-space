@@ -1,0 +1,39 @@
+body{
+  font-family: $font-primary;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: $color1;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+*{
+  box-sizing: border-box;
+}
+
+.flexbox{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.align-center{
+  align-items: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-flex-end{
+  justify-content: flex-end;
+}
+.flexwrap{
+  flex-wrap: wrap;
+}
+.nopadding{
+  padding: 0;
+}
+.nomargin{
+  margin: 0;
+}

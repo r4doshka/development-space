@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito Light'), local('Nunito-Light'), url('../fonts/Nunito/nunito-light.ttf') format('ttf');
+  src: local('Nunito Light'), local('Nunito-Light'), url('../fonts/Nunito/nunito-light.woff2') format('woff2'),
+  url('../fonts/Nunito/nunito-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url('../fonts/Nunito/nunito-regular.ttf') format('ttf');
+  src: local('Nunito Regular'), local('Nunito-Regular'), url('../fonts/Nunito/nunito-regular.woff2') format('woff2'),
+  url('../fonts/Nunito/nunito-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito'), local('Nunito'), url('../fonts/Nunito/nunito-bold.ttf') format('ttf');
+  src: local('Nunito Bold'), local('Nunito-Bold'), url('../fonts/Nunito/nunito-bold.woff2') format('woff2'),
+  url('../fonts/Nunito/nunito-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ultra';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ultra'), local('Ultra'), url('../fonts/Ultra/ultra.ttf') format('ttf');
+  src: local('Ultra'), local('Ultra'), url('../fonts/Ultra/ultra.woff2') format('woff2'),
+  url('../fonts/Ultra/ultra.woff') format('woff');
+}

@@ -1,0 +1,51 @@
+$block : ".purrweb-text-box";
+
+#{$block} {
+  margin-bottom: 126px;
+  &__header{
+    margin-bottom: 31px;
+  }
+  &__content{
+    p{
+      margin: 0 0 30px;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: left;
+      color: #272727;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &#{$block} {
+    &_indent-top{
+      padding-top: 31px;
+    }
+    &_limited{
+      width: 415px;
+    }
+    &_info{
+      .purrweb-text-box__header{
+        margin-bottom: 33px;
+      }
+      .purrweb-list.purrweb-list_tags{
+        margin-top: 6px;
+      }
+    }
+    &_quick-story{
+      width: 620px;
+      margin-bottom: 152px;
+    }
+    &_requirements{
+      margin-bottom: 126px;
+    }
+    &_technology{
+      width: 592px;
+      margin-bottom: 153px;
+    }
+  }
+}

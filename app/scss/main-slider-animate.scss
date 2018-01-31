@@ -1,0 +1,17 @@
+
+$block : purrweb-main-slider;
+
+.#{$block}{
+
+}
+
+p#text {
+  position: fixed;
+  top:0;
+  left:0;
+  text-align: left;
+  width: 100%;
+  padding: 0 10px 4px 10px;
+  color: #f7d700;
+  font-size: 60px;
+}

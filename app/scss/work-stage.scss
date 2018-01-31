@@ -1,0 +1,20 @@
+$block : purrweb-work-stage;
+
+.#{$block} {
+  position: relative;
+  padding: 17px 14px 0 9px;
+  @extend .flexbox;
+  @extend .justify-between;
+  &__design{
+    position: absolute;
+    top: -2px;
+    left: 16.9%;
+    width: 32.6%;
+  }
+  &__development{
+    width: 67%;
+  }
+  &__planing{
+    width: 25%;
+  }
+}

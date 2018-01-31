@@ -1,0 +1,158 @@
+$block : purrweb-card;
+
+.#{$block} {
+  @extend .flexbox;
+  &__header-group{
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 31px;
+    @extend .flexbox;
+    @extend .align-center;
+    &__left-bias{
+      left: -25px;
+    }
+    &__right-bias{
+      right: -166px;
+    }
+  }
+  &__header-count{
+    position: absolute;
+    left: -70px;
+    top: -84px;
+    font-family: $font-secondary;
+    font-size: 200px;
+    line-height: 1;
+    color: $color4;
+    text-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
+    &_reverse{
+      left: initial;
+      color: $color2;
+      right: 30px;
+      top: -94px;
+    }
+    &_shadow{
+      &:before{
+        content: url('../images/shadow.png');
+        position: absolute;
+        top: -15px;
+        right: -100%;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__header{
+    position: relative;
+    font-family: $font-secondary;
+    font-size: 48px;
+    line-height: 1.06;
+    color: $color3;
+    text-align: left;
+    white-space: pre-line;
+  }
+  &__inner-wrap{
+    position: relative;
+    z-index: 6;
+    padding-top: 45px;
+    &__align-right{
+      @extend .flexbox;
+      @extend .flex-wrap;
+      justify-content: flex-end;
+    }
+  }
+  &__description{
+    margin-bottom: 51px;
+    font-size: 18px;
+    line-height: 1.37;
+    color: $color3;
+    text-align: left;
+    white-space: pre-line;
+  }
+  &__image-wrap{
+    &.#{$block}__image-wrap{
+      &_left {
+        padding-left: 26px;
+        padding-right: 17px;
+      }
+      &_right {
+        padding-right: 44px;
+        padding-left: 18px;
+      }
+    }
+  }
+
+  &__image{
+    align-self: flex-start;
+  }
+  &__planing{
+    padding-bottom: 129px;
+  }
+  &__development{
+    padding: 94px 0 182px 0;
+    .#{$block}{
+      &__inner-wrap{
+        padding-top: 57px;
+      }
+      &__header-count{
+        left: -64px;
+        top: -101px;
+      }
+      &__header-group{
+        margin-bottom: 43px;
+      }
+      &__description{
+        margin-bottom: 46px;
+      }
+    }
+    .purrweb-result-box__left-bias {
+      left: -75px;
+    }
+  }
+  &__iterative{
+    padding: 94px 0 160px 0;
+    .#{$block}{
+      &__inner-wrap{
+        padding-top: 54px;
+      }
+      &__description{
+        position: relative;
+        left: 17px;
+        margin-bottom: 26px;
+      }
+      &__header-group{
+        margin-bottom: 26px;
+        &__right-bias{
+          right:-185px;
+        }
+      }
+      &__header-count{
+        &_shadow{
+          &:before{
+            top:-50px;
+          }
+        }
+      }
+    }
+    .purrweb-result-list{
+      padding: 44px 64px 31px 60px;
+    }
+    .purrweb-result-box__right-bias{
+      right:-81px;
+    }
+  }
+  &__design{
+    padding: 171px 0 178px 0;
+    .#{$block}{
+      &__inner-wrap{
+        padding-top: 60px;
+      }
+     &__description{
+       margin-bottom: 45px;
+     }
+    }
+    .purrweb-result-list{
+      padding: 44px 75px 31px 57px;
+    }
+  }
+}
