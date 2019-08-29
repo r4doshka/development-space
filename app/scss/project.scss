@@ -16,23 +16,26 @@ $block: ".purrweb-project";
 
     }
     &-title{
-      opacity: 0.14;
-      font-family: $font-secondary;
-      font-size: 86px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.01;
-      letter-spacing: normal;
-      text-align: left;
-      color: #272727;
-      width:1px;
-      word-wrap: break-word;
-      margin: 0 auto;
-      position: relative;
-      top: -49px;
-      left: -6px;
-      z-index: -2;
+        opacity: 0.14;
+        font-family: $font-secondary;
+        font-size: 86px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.01;
+        letter-spacing: normal;
+        text-align: left;
+        color: #272727;
+        width:1px;
+        word-wrap: break-word;
+        margin: 0 auto;
+        position: relative;
+        top: -49px;
+        left: -6px;
+        z-index: -2;
+      & > div {
+        margin-bottom: 20px;
+      }
     }
   }
 }

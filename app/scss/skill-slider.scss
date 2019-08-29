@@ -1,6 +1,9 @@
 .skill-slider{
+  & *  {
+    transition: none !important;
+  }
   .slick-track{
-    .slick-slide{
+    .skill-slider__item{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -9,31 +12,37 @@
       line-height: 2.07;
       color: $color3;
       height: 75px;
-      transition: 0.6s;
+      transition: opacity 0.6s, font-size 0.6s, line-height 0.6s !important;
       padding: 0 20px;
       opacity: 0;
+    }
+    .slick-slide{
       &.slick-active{
 
       }
       &.item-small{
-        opacity: 0.15;
-        font-size: 14px;
-        line-height: 2.07;
-
+        .skill-slider__item{
+          opacity: 0.15;
+          font-size: 14px;
+          line-height: 2.07;
+        }
       }
       &.item-big{
-
-        opacity: 0.3;
-        font-size: 24px;
-        line-height: 1.22;
-
+        .skill-slider__item{
+          opacity: 0.3;
+          font-size: 24px;
+          line-height: 1.22;
+        }
       }
       &.item-large{
-        font-size: 36px;
-        line-height: 1;
-        opacity: 1;
+        .skill-slider__item{
+          font-size: 36px;
+          line-height: 1;
+          opacity: 1;
+        }
       }
     }
+
   }
 }
 

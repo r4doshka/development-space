@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="20.5" cy="20.5" r="20.5" fill="#F8E71C"/>
+        <text fill="#272727" font-family="ArialUnicodeMS, Arial Unicode MS" font-size="36">
+            <tspan x="8" y="44">⇘</tspan>
+        </text>
+    </g>
+</svg>

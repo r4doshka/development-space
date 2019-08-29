@@ -14,6 +14,8 @@ $block : ".purrweb-review";
     z-index: -4;
   }
   &__header{
+    @extend .flexbox;
+    flex-direction: column;
     margin-bottom: 17px;
     .purrweb-badge{
       margin-top: 3px;
