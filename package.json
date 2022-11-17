@@ -34,7 +34,7 @@
     "slick-carousel": "^1.6.0",
     "style-loader": "^0.18.1",
     "url-loader": "^0.5.8",
-    "webpack": "^2.6.0",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^2.4.5",
     "webpack-spritesmith": "^0.3.3"
   },
